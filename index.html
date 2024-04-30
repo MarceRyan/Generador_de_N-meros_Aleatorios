@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/brain.js"></script>
+    <title>Generador de Números Aleatorios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+    <h2>Generador de Números Aleatorios</h2>
+    <div class="inputs">
+        <label for="input1">Número 1:</label>
+        <input type="text" id="input1" readonly>
+        <label for="input2">Número 2:</label>
+        <input type="text" id="input2" readonly>
+        <label for="input3">Número 3:</label>
+        <input type="text" id="input3" readonly>
+        <button onclick="generarNumeros()">Generar Números</button>
+    </div>
+    <div class="output">
+        <h3>Output</h3>
+        <input type="text" id="output" readonly>
+        <h3>Predicción de la Red Neuronal</h3>
+        <input type="text" id="prediction" readonly>
+    </div>
+    <div class="output">
+        <h3>Resultados Aproximados</h3>
+    <table id="outputTable">
+        <tr>
+            <th>Input 1</th>
+            <th>Input 2</th>
+            <th>Input 3</th>
+            <th>Output</th>
+            <th>Predicción</th>
+        </tr>
+        </table>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
